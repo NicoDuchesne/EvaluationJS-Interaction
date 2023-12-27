@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="page repertoriant les differentes jeux de la serie">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!-- css swiper-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Games</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="img/logo.png" alt="logo"/></a>
+        <a class="button" href="games.html">Games</a>
+        <a class="button" href="chrono.html">Chrono</a>
+        <a class="button" href="form.html">Form</a>
+        <img id="mode" src="img/lightMode.png" alt="mode" />
+    </nav>
+
+    <div class="firstZone">
+        <aside>
+            <a class="sideLink" href="games.html#khOne">Kingdom Hearts</a>
+            <a class="sideLink" href="games.html#chain">Chain of Memories</a>
+            <a class="sideLink" href="games.html#khTwo">Kingdom Hearts II</a>
+            <a class="sideLink" href="games.html#days">358/2 Days</a>
+            <a class="sideLink" href="games.html#coded">Coded</a>
+            <a class="sideLink" href="games.html#birth">Birth By Sleep</a>
+            <a class="sideLink" href="games.html#threeD">3D: Dream Drop Distance</a>
+            <a class="sideLink" href="games.html#khX">Kingdom Hearts X</a>
+            <a class="sideLink" href="games.html#xBackCover">X Back Cover</a>
+            <a class="sideLink" href="games.html#fragment">A fragmentary passage</a>
+            <a class="sideLink" href="games.html#khThree">Kingdom Hearts III</a>
+            <a class="sideLink" href="games.html#darkRoad">Dark Road</a>
+            <a class="sideLink" href="games.html#melody">Melody of Memory</a>
+            <a class="sideLink" href="games.html#missing">Missing-Link</a>
+        </aside>
+
+        <div class="secondZone">
+            <header>
+                <img src="img/games.png" alt="jeux" />
+            </header>
+
+            <div class="menuBurger"> <!-- Menu Burger -->
+                <div class="iconBurger" id="iconBurger">
+                    <div class="bar"></div> 
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="liste" id="liste">
+                    <li><a class="burgerLink" href="games.html#khOne">Kindom Hearts</a></li>
+                    <li><a class="burgerLink" href="games.html#khTwo">Kindom Hearts II</a></li>
+                    <li><a class="burgerLink" href="games.html#khThree">Kindom Hearts III</a></li>
+                    <li><a class="burgerLink" href="https://kingdomhearts.fandom.com/fr/wiki/Kingdom_Hearts_IV" target="_blank">Kindom Hearts IV</a></li> 
+                </ul>
+            </div>
+
+            <main> <!-- MAIN : C EST ICI QUE LE CONTENU CHANGE -->
+
+                <!-- Carrousel realise avec swiper, il fait défiler les logos des differents jeux -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="games.html#khOne"><img id="test" src="img/game_KH1.png" alt="Kingdom Hearts" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#chain"><img src="img/game_chain.png" alt="Chain of Memories" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#khTwo"><img src="img/game_KH2.png" alt="Kingdom Hearts II" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#days"><img src="img/game_358Days.png" alt="358/2 Days" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#coded"><img src="img/game_coded.png" alt="Coded" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#birth"><img src="img/game_birth.png" alt="Birth By Sleep" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#threeD"><img src="img/game_3D.png" alt="3D: Dream Drop Distance" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#khX"><img src="img/game_X.png" alt="Kingdom Hearts X" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#xBackCover"><img src="img/game_XBack.png" alt="X Back Cover" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#fragment"><img src="img/game_fragment.png" alt="A fragmentary passage" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#khThree"><img src="img/game_KH3.png" alt="Kingdom Hearts III" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#darkRoad"><img src="img/game_road.png" alt="Dark Road" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#melody"><img src="img/game_melody.png" alt="Melody of Memory" /></a></div>
+                        <div class="swiper-slide"><a href="games.html#missing"><img src="img/game_missing.png" alt="Missing-Link" /></a></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- On va présenter la liste des jeux en faisant des sections, une section = un jeu -->
+                <section id="khOne"> <!-- jeu 1-->
+                    <h2>Kingdom Hearts</h2>
+                    <img src="img/game_KH1.png" alt="Kingdom Hearts" />
+                    <p>Sora, Riku et Kairi, trois jeunes amis, rêvent de parcourir les mondes qui les entourent et décident de construire un radeau. Mais lorsque leur 
+                        île est attaquée par les sombres Sans-coeur, le destin de ces trois enfants bascule à tout jamais.</p>
+                </section> <!-- un jeu est donc presente par un titre + une image + un resume -->
+
+                <section id="chain"> <!-- jeu 2-->
+                    <h2>Kingdom Hearts Chain of Memories</h2>
+                    <img src="img/game_chain.png" alt="Chain of Memories" />
+                    <p>A la recherche du Roi Mickey et Riku, Sora pénètre dans le Manoir Oblivion, dirigé par une mystérieuse Organisation. Pour retrouver ses amis 
+                        et ses souvenirs perdus, Sora va devoir maitriser le pouvoir des cartes.</p>
+                </section>
+
+                <section id="khTwo"> <!-- jeu 3-->
+                    <h2>Kingdom Hearts II</h2>
+                    <img src="img/game_KH2.png" alt="Kingdom Hearts II" />
+                    <p>Un an après les évènements du Manoir Oblivion, une nouvelle menace pèse sur les mondes : l'Organisation XIII et ses Simili. Sora repart à 
+                        l'aventure pour empêcher l'ennemi de mettre en oeuvre son plan : s'emparer du Kingdom Hearts.</p>
+                </section>
+
+                <section id="days"> <!-- jeu 4-->
+                    <h2>Kingdom Hearts 358/2 Days</h2>
+                    <img src="img/game_358Days.png" alt="358/2 Days" />
+                    <p>Découvrez à travers des missions quotidiennes l'année passée par Roxas au sein de l'intrigante Organisation XIII, et l'improbable amitié de trois Simili.</p>
+                </section>
+               
+                <section id="coded"> <!-- jeu 5-->
+                    <h2>Kingdom Hearts Coded</h2>
+                    <img src="img/game_coded.png" alt="Coded" />
+                    <p>Un étrange message est apparu dans le Carnet de Jiminy et le Roi Mickey décide de le décoder. Dans un monde virtuel, un Sora numérique se 
+                        réveille et doit détruire des bugs pour en découvrir l'origine.</p>
+                </section>
+
+                <section id="birth"> <!-- jeu 6-->
+                    <h2>Kingdom Hearts Birth By Sleep</h2>
+                    <img src="img/game_birth.png" alt="Birth By Sleep" />
+                    <p>L'épopée de trois apprentis de la Keyblade : Terra, Ventus et Aqua. Trois amis, trois volontés, un destin terrible et incertain qu'ils devront 
+                        affronter, non sans conséquences sur l'avenir des mondes.</p>
+                </section>
+
+                <section id="threeD"> <!-- jeu 7-->
+                    <h2>Kingdom Hearts 3D: Dream Drop Distance</h2>
+                    <img src="img/game_3D.png" alt="3D: Dream Drop Distance" />
+                    <p>L'heure est venue pour Sora et Riku de se préparer au terrible combat qui les attend. Le sorcier Yen Sid décide de leur faire passer 
+                        l'Examen du Symbole de maîtrise dans les Mondes Endormis mais tout ne va pas se dérouler comme prévu.</p>
+                </section>
+
+                <section id="khX"> <!-- jeu 8-->
+                    <h2>Kingdom Hearts X</h2>
+                    <img src="img/game_X.png" alt="Kingdom Hearts X" />
+                    <p>Une nouvelle génération de Leaders a pris la succession des Oracles et tente de préserver la lumière incarnée par les porteurs de 
+                        Keyblades. Mais bien des mystères restent à résoudre sur le véritable but de ce projet...</p>
+                </section>
+
+                <section id="xBackCover"> <!-- jeu 9-->
+                    <h2>Kingdom Hearts X Back Cover</h2>
+                    <img src="img/game_XBack.png" alt="X Back Cover" />
+                    <p>Le Maître des Maîtres a disparu, laissant ses cinq apprentis seuls face à la menace grandissante des ténèbres et à la fin du 
+                        monde décrite dans le Livre des Prophéties. Qui est le traître qui observe dans l'ombre les évènements menant à la Guerre des Keyblades ?</p>
+                </section>
+
+                <section id="fragment"> <!-- jeu 10-->
+                    <h2>Kingdom Hearts 0.2 Birth by Sleep -A fragmentary passage-</h2>
+                    <img src="img/game_fragment.png" alt="A fragmentary passage" />
+                    <p>Prisonnière du Domaine des Ténèbres, Aqua s'efforce d'en trouver une sortie. Guidée par la lumière de ses amis, elle doit affronter ses 
+                        craintes et ne pas se laisser submerger par le désespoir des lieux.</p>
+                </section>
+
+                <section id="khThree"> <!-- jeu 11-->
+                    <h2>Kingdom Hearts III</h2>
+                    <img src="img/game_KH3.png" alt="Kingdom Hearts III" />
+                    <p>La bataille finale contre Maître Xehanort et son Organisation XIII est proche, et le camp de la Lumière doit réunir ses forces pour empêcher 
+                        la création de la χ-blade. Sora, Donald, Dingo, Mickey et Riku repartent à l'aventure pour retrouver les autres Porteurs de Keyblades.</p>
+                </section>
+
+                <section id="darkRoad"> <!-- jeu 12-->
+                    <h2>Kingdom Hearts Dark Road</h2>
+                    <img src="img/game_road.png" alt="Dark Road" />
+                    <p>Vous connaissez Maître Xehanort, l'antagoniste de Kingdom Hearts, mais savez-vous pourquoi il est devenu le chercheur des ténèbres ? 
+                        Dans cette nouvelle histoire, vous incarnerez un jeune Xehanort et découvrirez ses secrets en suivant son parcours de futur porteur 
+                        de Keyblade dans la contrée lointaine de Scala ad Caelum.</p>
+                </section>
+
+                <section id="melody"> <!-- jeu 13-->
+                    <h2>Kingdom Hearts Melody of Memory</h2>
+                    <img src="img/game_melody.png" alt="Melody of Memory" />
+                    <p>Les Gardiens de la Lumière partent à la recherche de Sora. Kairi décide de plonger dans ses souvenirs, certaine d'y trouver la clé pour le 
+                        retrouver.</p>
+                </section>
+
+                <section id="missing"> <!-- jeu 14-->
+                    <h2>Kingdom Hearts Missing-Link</h2>
+                    <img src="img/game_missing.png" alt="Missing-Link" />
+                    <p>Transporté dans la ville de Scala ad Caelum fondée par Ephemer sur les ruines de la Ville de l'Aube, découvrez comment la tradition des 
+                        Maîtres de la Keyblade s'est perpétuée.</p>
+                </section>
+
+            </main>
+
+            <footer>
+                <img src="img/instagram.png" alt="instagram" />
+                <img src="img/twitter.png" alt="twitterX" />
+                <img src="img/youtube.png" alt="youtube" />
+                <img src="img/facebook.png" alt="facebook" />
+                <img src="img/tiktok.png" alt="tiktok" />
+            </footer>
+
+        </div>
+    </div> 
+
+    <!-- Script -->
+    <script src="js/script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+* {
+    margin :0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+/* 1 - STRUCTURE GENERALE DE LA PAGE*/
+
+body { /*Contient tout, plus precisement : nav + .firstZone (en column)*/
+    display : flex;
+    flex-direction: column;
+}
+
+nav { /* premiere partie du body*/
+    background: linear-gradient(rgb(32, 99, 141), rgb(0, 17, 27));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstZone { /* seconde partie du body, plus precisement : aside + .secondZone (en row)*/
+    display : flex;
+    flex-direction: row;
+}
+
+aside { /* premiere partie de .firstZone*/
+    background-color: rgb(0, 17, 27);
+    width : 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+}
+
+.secondZone { /* seconde partie de .firstZone, plus precisement : header + burgerMenu +  main + footer (en column)*/
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 22, 22);
+    color: rgb(241, 231, 231);
+}
+
+header img{ /* premiere partie de .secondZone*/
+    width: 85vw;
+    height: 100%;
+}
+
+
+.menuBurger.active { /* le menu burger, deuxieme partie de .secondZone*/
+    background-color: rgb(0, 17, 27);
+}
+
+main { /* troisieme partie de .secondZone, c'est ici que le contenu va changer entre les fichiers html*/
+    padding-bottom: 2%;
+}
+
+
+footer{ /* quatrieme partie de .secondZone*/
+    background-color: rgb(32, 99, 141);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:auto;
+    height: 13vh;
+}
+
+
+/* 2-a ELEMENTS MODIFIES DANS NAV */
+nav img{
+    height: 15vh;
+    width: 15vw;
+}
+
+#mode {
+    cursor: pointer;
+    transition: 1s;
+}
+
+nav a.button{
+    font-size: 5vw;
+    background-color: rgb(32, 99, 141);
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+    border-radius: 10px;
+    padding : 3px;
+}
+
+nav a.button:hover {
+    transform: scale(1.2);
+}
+
+
+/* 2-b ELEMENTS MODIFIES DANS ASIDE */
+aside a{
+    font-size: 2vw;
+    padding : 5%;
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+
+
+/* 2-c ELEMENTS MODIFIES DANS BURGER MENU */
+.iconBurger {
+    cursor: pointer;
+    padding-left: 2px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+
+.liste {
+    list-style-type: none;
+    display: none;
+    border-bottom: solid;
+    border-top: solid;
+}
+
+.liste li {
+    text-align: center;
+    border-bottom: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.liste li:last-of-type {
+    border-bottom: none;
+}
+
+.burgerLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.liste.active {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 2-d ELEMENTS MODIFIES DANS FOOTER */
+footer img{
+    height: 12vh;
+    width:8vw;
+}
+
+
+/* 3 - MODIFICATIONS DANS LE MAIN DE MES PAGES HTML*/
+
+/* a - Les articles utilisés pour présenter les persos (index.html)*/
+#persos {
+    padding-top: 2%;
+}
+
+.characters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+main article img {
+    width: 400px;
+    height: 650px;
+}
+
+
+/* b - Le swiper et les sections utilisés pour présenter les jeux (games.html)*/
+.swiper {
+    display: flex;
+    flex-direction: row;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    height: 350px;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+main section h2{
+    width: 85vw;
+}
+
+main section img {
+    width: 20vw;
+    padding-top: 2%;
+}
+
+main section p {
+    width: 60vw;
+    padding-top: 2%;
+}
+
+
+/* c - La div .chronology pour présenter les ordres chronologiques (chrono.html) */
+.chronology{
+    display: flex;
+    flex-direction: column;
+}
+
+.chronology img {
+    width: 85vw;
+}
+
+.chronology p {
+    padding-top: 2%;
+}
+
+.chronology ul {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.chronology li {
+    padding-bottom: 1%;
+}
+
+
+/* d - Le form de la page formulaire (form.html) */
+#formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85vw;
+}
+
+form {
+    width: 81vw;
+    display: flex;
+    flex-direction: column;
+} 
+
+form > * {
+    margin-top: 2%;
+}
+
+
+/* 4 - MODIFICATIONS POUR LE LIGHT MODE*/
+    /* On opere les changements grace à la classe lightMode */
+
+.secondZone{transition: 1s;}
+.secondZone.lightMode {
+    background-color: rgb(241, 231, 231);
+    color: rgb(22, 22, 22);
+}
+
+aside{transition: 1s;}
+aside.lightMode { 
+    background-color: rgb(163, 163, 163);
+}
+
+.sideLink {transition: 1s;}
+.sideLink.lightMode{
+    color: rgb(22, 22, 22);
+}
+
+nav {transition: 1s;}
+nav.lightMode { 
+    background: linear-gradient(rgb(32, 99, 141), rgb(163, 163, 163));
+}
+
+footer {transition: 1s;}
+footer.lightMode{ 
+    background-color: rgb(63, 134, 179);
+}
+
+.burgerLink{transition: 1s;}
+.burgerLink.lightMode {
+    color: #000000;
+}
+
+.menuBurger.active{transition: 1s;}
+.menuBurger.active.lightMode {
+    background-color: rgb(163, 163, 163);
+}
+
+.bar{transition: 1s;}
+.bar.lightMode {
+    background-color: #000000;
+}
+
+
+/* 5 - RESPONSIV POUR TABLETTES*/
+
+/* changements apportés :
+    - on redimenssione les images de la nav
+    - on redimensionne les images des personnages
+    - on redimensionne le footer et ses images
+    - on redimensonne les image du swiper
+*/
+
+@media all and (max-width: 1024px){
+    
+    nav img{
+        height: 12vh;
+        width: 22vw;
+       
+    }
+
+    main article img {
+        width: 300px;
+        height: 450px;
+    }
+
+    footer {
+        height: 8vh;
+    }
+
+    footer img{
+        height: 7vh;
+        width:10vw;
+    }
+
+    .swiper-slide img {
+        height: 250px;
+    }
+
+}
+
+
+/* 6 - RESPONSIV POUR TELEPHONES*/
+
+ @media all and (max-device-width: 480px) {
+    /* - on redimensionne encore les images de la nav */
+    nav img{
+        height: 8vh;
+        width: 28vw;
+       
+    }
+
+    /* - on redimensionne encore les images des personnages */
+    main article img {
+        width: 200px;
+        height: 300px;
+    }
+
+    /* - on redimensione encore le footer et ses images */
+    footer {
+        height: 6vh;
+    }
+
+    footer img{
+        height: 5vh;
+        width:10vw;
+    }
+
+    /* - on redimensione encore les images du swiper*/
+    .swiper-slide img {
+        height: 150px;
+    }
+
+    /* - on masque aside pour plus de lisibilité et de place */       
+    aside{
+        display : none;
+    }
+
+    /* - on redimensionne les différents elements pour s'adapter à la disparition du aside */
+    .secondZone {
+        width: 100vw;
+    }
+
+    header img{
+        width: 100vw;
+    }
+
+    .chronology img {
+        width: 100vw;
+    }
+
+    main section h2{
+        width: 100vw;
+    }
+    
+    main section img {
+        width: 25vw;
+    }
+    
+    main section p {
+        width: 65vw;
+    }
+
+    #formulaire {
+        width: 100vw;
+    }
+
+    form {
+        width: 96vw; 
+    }
+
+    /* - on redimensionne la première section dans index.html pour plus de clarté */
+    #presentation img{
+        width: 95vw;
+    }
+
+    #presentation p{
+        width: 85vw;
+    }
+
+
+} 

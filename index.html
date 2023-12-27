@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'acceuil de notre petit site web sur Kingdom Hearts">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Kingdom Hearts</title>
+</head>
+
+<body>
+    <nav> <!-- Notre barre de navigation, permet d'acceder aux 4 differenets pages, elle restera sur toutes les pages -->
+        <a href="index.html"><img src="img/logo.png" alt="logo"/></a>
+        <a class="button" href="games.html">Games</a>
+        <a class="button" href="chrono.html">Chrono</a>
+        <a class="button" href="form.html">Form</a>
+        <img id="mode" src="img/lightMode.png" alt="mode" /> <!-- L'image clickable pour switcher entre light et dark mode -->
+    </nav>
+
+    <div class="firstZone"> 
+        <aside> <!-- Notre liste de liens sur le cote, permet d'acceder directement aux jeux, elle restera la même sur toutes les pages -->
+            <a class="sideLink" href="games.html#khOne">Kingdom Hearts</a>
+            <a class="sideLink" href="games.html#chain">Chain of Memories</a>
+            <a class="sideLink" href="games.html#khTwo">Kingdom Hearts II</a>
+            <a class="sideLink" href="games.html#days">358/2 Days</a>
+            <a class="sideLink" href="games.html#coded">Coded</a>
+            <a class="sideLink" href="games.html#birth">Birth By Sleep</a>
+            <a class="sideLink" href="games.html#threeD">3D: Dream Drop Distance</a>
+            <a class="sideLink" href="games.html#khX">Kingdom Hearts X</a>
+            <a class="sideLink" href="games.html#xBackCover">X Back Cover</a>
+            <a class="sideLink" href="games.html#fragment">A fragmentary passage</a>
+            <a class="sideLink" href="games.html#khThree">Kingdom Hearts III</a>
+            <a class="sideLink" href="games.html#darkRoad">Dark Road</a>
+            <a class="sideLink" href="games.html#melody">Melody of Memory</a>
+            <a class="sideLink" href="games.html#missing">Missing-Link</a>
+        </aside>
+
+        <div class="secondZone">
+            <header> <!-- Notre header avec une image nous indiquant sur quelle page nous sommes -->
+                <img src="img/welcome.png" alt="bienvenue" />
+            </header>
+
+            <div class="menuBurger"> <!-- Notre menu Burger pour retrouver les jeux principaux-->
+                <div class="iconBurger" id="iconBurger"> <!-- Icone pour afficher et cacher-->
+                    <div class="bar"></div> 
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="liste" id="liste">
+                    <li><a class="burgerLink" href="games.html#khOne">Kindom Hearts</a></li>
+                    <li><a class="burgerLink" href="games.html#khTwo">Kindom Hearts II</a></li>
+                    <li><a class="burgerLink" href="games.html#khThree">Kindom Hearts III</a></li>
+                    <li><a class="burgerLink" href="https://kingdomhearts.fandom.com/fr/wiki/Kingdom_Hearts_IV" target="_blank">Kindom Hearts IV</a></li> 
+                </ul>
+            </div>
+
+            <main> <!-- MAIN : C EST ICI QUE LE CONTENU CHANGE -->
+                <section id="presentation"> <!-- Section pour presenter le principes du site -->
+                    <h2>Quel est ce site ?</h2>
+                    <img src="img/presentation.jpg" alt="presentation" />
+                    <p>Ce site internet est la pour vous presenter la serie de jeu video Kingdom Hearts. Vous trouverez sur la page d'Acceuil les differents personnages 
+                        principaux, sur la page Games les differnets jeux que la serie comporte, et pour finir la page chronologie qui vous conseillera dans quel ordre jouer 
+                        à ces jeux !</p>
+                </section>
+
+                <h2 id="persos">Personnages principaux</h2>
+
+                <div class="characters"> <!-- Listes des personnages principaux -->
+                    <article> <!-- un article correspond à un personnage avec son nom -->
+                        <img src="img/character_sora.png" alt="sora" />
+                        <h3>SORA</h3>
+                    </article>
+                    <article>
+                        <img src="img/character_riku.png" alt="riku" />
+                        <h3>RIKU</h3>
+                    </article>
+                    <article>
+                        <img src="img/character_kairi.png" alt="kairi" />
+                        <h3>KAIRI</h3>
+                    </article>
+                    <article>
+                        <img src="img/character_roxas.png" alt="roxas" />
+                        <h3>ROXAS</h3>
+                    </article>
+                    <article>
+                        <img src="img/character_donald.png" alt="donald" />
+                        <h3>DONALD</h3>
+                    </article>
+                    <article>
+                        <img src="img/character_dingo.png" alt="dingo" />
+                        <h3>DINGO</h3>
+                    </article>
+                </div>
+            </main>
+
+            <footer> <!-- Notre footer, avec tous les réseaux sociaux, il restera le même sur toutes les pages -->
+                <img src="img/instagram.png" alt="instagram" />
+                <img src="img/twitter.png" alt="twitterX" />
+                <img src="img/youtube.png" alt="youtube" />
+                <img src="img/facebook.png" alt="facebook" />
+                <img src="img/tiktok.png" alt="tiktok" />
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Scripts-->
+    <script src="js/script.js"></script> 
+
+</body>
+</html>
